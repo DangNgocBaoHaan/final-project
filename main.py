@@ -149,6 +149,7 @@ def check_collision(obstacles):
             obstacles_passed += 1
             passed_obstacles.append(obstacle)
     for passed_obstacle in passed_obstacles:
+        if passed_obstacle in obstacles:
         obstacles.remove(passed_obstacle)
 
 
